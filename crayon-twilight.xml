@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2011, Fülöp, András, fulibacsi@gmail.com
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http:##www.gnu.org/licenses/>
+-->
+
+<style-scheme id="crayon-twilight" _name="Crayon-Twilight" version="1.0">
+  <author>András Fülöp</author>
+  <_description>Dark and elegant color scheme, based on the work of Aram Kocharyan (http://ak.net84.net/)</_description>
+
+<!-- Colors -->
+  
+  <color name="off_white" value="#f8f8f8"/> <!-- text -->
+  <color name="very-dark-grey"  value="#2d2d2d"/> <!-- background -->
+  <color name="not-that-very-dark-grey"  value="#51514d"/> <!-- current line -->
+  <color name="very-dark-grey_1"  value="#333333"/> <!-- line_number-fg -->
+  <color name="medium-grey"  value="#909090"/><!-- line_number-bg -->
+  <color name="dark_maroon" value="#002f29"/> <!-- bracket mismatch -->
+  <color name="very-pale-azure"  value="#ddeeff"/> <!-- selection-bg -->
+  <color name="moderate-azure"  value="#316ba5"/> <!-- selection-fg -->
+  <color name="mulberryish-gray"  value="#7f7b80"/> <!-- comment -->
+  <color name="lime-greenish-gray"  value="#a0ab83"/> <!-- string -->
+  <color name="pale-light-grayish-gamboge"  value="#d8b584"/> <!-- keyword, statement, reserved, type, modifier  -->
+  <color name="medium-gray"  value="#AAA"/> <!-- tag -->
+  <color name="pale-light-grayish-gold"  value="#fbefb1"/> <!-- identifier -->
+  <color name="azureish-gray"  value="#879ab2"/> <!-- variable -->
+  <color name="grayish-brown"  value="#ad8258"/> <!-- entity -->
+  <color name="light-vermilion"  value="#db7e64"/> <!-- constant -->
+  <color name="magentaish-gray"  value="#ac99ab"/> <!-- operator, html char -->
+  <color name="dark-mulberryish-gray"  value="#726e73"/> <!-- notation -->
+  <color name="dark-gray"  value="#595959"/> <!-- faded -->
+  <color name="pink_sandstone" value="#cf6a4c"/> <!-- numbers -->
+  <color name="super_faded_orange" value="#e9c062"/>
+  <color name="super_red" value="#ff2000"/>
+  <color name="night_black" value="#000000"/>
+  
+
+<!-- Global Settings -->
+
+  <style name="text" foreground="pale-light-grayish-gold" background="very-dark-grey"/> <!-- done -->
+  <style name="cursor" foreground="pale-light-grayish-gold"/> <!-- done -->
+  <style name="current-line" background="not-that-very-dark-grey"/> <!-- done -->
+  <style name="line-numbers" foreground="very-dark-grey_1" background="medium-grey"/> <!-- done -->
+  <style name="selection" foreground="moderate-azure" background="very-pale-azure"/>
+  
+<!-- Bracket Matching -->
+  <style name="bracket-match" foreground="very-pale-azure" bold="true"/> <!-- done -->
+  <style name="bracket-mismatch" background="super_red" bold="true"/> <!-- done -->
+  <style name="search-match" foreground="moderate-azure" background="very-pale-azure"/> <!-- done -->
+
+<!-- Comments -->
+  <style name="def:comment" foreground="mulberryish-gray" italic="true"/> <!-- done -->
+  <style name="def:shebang" foreground="mulberryish-gray" italic="true"/> <!-- done -->
+  <style name="def:doc-comment-element" foreground="mulberryish-gray" bold="true"/> <!-- done -->
+
+<!-- Constants and Variables-->
+  <style name="def:constant" foreground="light vermilion"/> <!-- done -->
+  <style name="def:string" foreground="lime-greenish-gray"/> <!-- done -->
+  <style name="def:special-char" foreground="azureish-gray"/>
+  <style name="def:special-constant" foreground="pale-light-grayish-gamboge" bold="true"/> <!-- done -->
+  <style name="def:boolean" foreground="pink_sandstone"/> <!-- done -->
+  <style name="def:number" foreground="pink_sandstone"/> <!-- done -->
+  <style name="def:floating-point" foreground="pink_sandstone"/> <!-- done -->
+  <style name="def:keyword" foreground="grayish-brown" bold="true"/> <!-- done -->
+  <style name="def:builtin" foreground="grayish-brown" bold="true"/> <!-- done -->
+  <style name="def:variable" foreground="azureish-gray"/> <!-- done -->
+  
+<!-- Identifiers -->
+  <style name="def:identifier" foreground="pale-light-grayish-gamboge" /> <!-- done -->
+
+<!-- Statements -->
+  <style name="def:statement" foreground="pale-light-grayish-gamboge"/> <!-- done -->
+
+<!-- Types -->
+  <style name="def:type" foreground="pale-light-grayish-gamboge"/> <!-- done -->
+  
+<!-- Others -->
+  <style name="def:error" foreground="off_white" background="super_red" bold="true"/> <!-- done -->
+  <style name="def:note" foreground="dark-mulberryish-gray" bold="true"/>
+  <style name="def:net-address-in-comment" foreground="moderate-azure" italic="false" underline="true"/>
+  <style name="def:preprocessor" foreground="magentaish-gray"/>
+  <style name="def:function" foreground="grayish-brown" underline="true"/>
+    
+<!-- Unknown? -->
+  <style name="def:specials" background="azureish-gray"/>
+
+<!-- C Styles -->
+  <style name="c:preprocessor" map-to="def:special-char"/>
+
+<!-- Diff Styles -->
+  <style name="diff:ignore" foreground="medium-gray"/>
+
+<!-- Ruby Styles -->
+  <style name="ruby:module-handler" foreground="pale-light-grayish-gamboge"/>
+  <style name="ruby:symbol" foreground="pink_sandstone"/>
+  <style name="ruby:regex" foreground="super_faded_orange"/>
+
+<!-- SH Styles -->
+  <style name="sh:others" map-to="text"/>
+  
+<!-- XML Styles -->
+  <style name="xml:attribute-name" foreground="pale-light-grayish-gamboge"/>
+  <style name="xml:element-name" foreground="azureish-gray"/>
+
+</style-scheme>
